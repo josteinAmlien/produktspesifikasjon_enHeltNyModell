@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Grunnkrets",
+    "description": "den minste geografiske enhet det blir beregnet statistikk på",
+    "abstract": false,
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_MultiSurface",
+        "cardinality": "0..1",
+        "description": "flategeometri"
+      },
+      {
+        "name": "grunnkretsId",
+        "type": "CharacterString",
+        "cardinality": "1",
+        "description": "navn og nummer som identifiserer grunnkretsen"
+      },
+      {
+        "name": "kommunenummer",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "identifikasjon av hvilken kommune grunnkretsen tilhører"
+      }
+    ]
+  }
+]
