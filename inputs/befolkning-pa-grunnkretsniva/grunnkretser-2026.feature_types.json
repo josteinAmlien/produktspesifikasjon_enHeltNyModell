@@ -116,5 +116,46 @@
         "description": "Tidspunktet når fenomenet oppsto"
       }
     ]
+  },
+  {
+    "name": "Grense",
+    "description": "avgrensingslinje",
+    "abstract": false,
+    "attributes": [
+      {
+        "name": "kvalitet",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "stedfestingens kvalitet"
+      },
+      {
+        "name": "grenselinje",
+        "type": "GM_Curve",
+        "cardinality": "1",
+        "description": "linjegeometri"
+      },
+      {
+        "name": "avgrensningstype",
+        "type": "Avgrensningstype",
+        "cardinality": "1",
+        "description": "type avgrensingslinje",
+        "valueDomain": {
+          "kind": "codelist",
+          "listedValues": [
+            {
+              "value": "kommunegresne",
+              "label": "",
+              "description": "kommunegresne"
+            }
+          ],
+          "asDictionary": "false"
+        }
+      }
+    ],
+    "relationships": {
+      "inheritance": [
+        "SOSIObjekt"
+      ]
+    }
   }
 ]
