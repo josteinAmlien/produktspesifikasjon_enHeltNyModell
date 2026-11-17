@@ -1,0 +1,13 @@
+metadataId: 7eb907de-fdaa-4442-a8eb-e4bd06da9ca8
+output_directory: produktspesifikasjon_grunnkretser
+product_slug: befolkning_pa_grunnkretsniva
+updated: '2026-11-17'
+scopes:
+- name: Grunnkretser-2026
+  url: inputs/befolkning-pa-grunnkretsniva/grunnkretser-2026.feature_types.json
+  generator: custom
+  description: Datamodell (Manuell datamodell)
+- name: Manuell datamodell
+  url: inputs/befolkning-pa-grunnkretsniva/manuell-datamodell.feature_types.json
+  generator: custom
+  description: Datamodell (Manuell datamodell)
