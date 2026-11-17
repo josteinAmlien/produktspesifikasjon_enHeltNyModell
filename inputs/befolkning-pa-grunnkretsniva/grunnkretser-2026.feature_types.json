@@ -23,5 +23,39 @@
         "description": "identifikasjon av hvilken kommune grunnkretsen tilhører"
       }
     ]
+  },
+  {
+    "name": "Delområde",
+    "description": "statistisk mellomnivå mellom grunnkrets og kommune",
+    "abstract": false,
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_MultiSurface",
+        "cardinality": "0..1",
+        "description": "flategeometri"
+      },
+      {
+        "name": "delområdeId",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "nummer og navn som identifiserer delområdet"
+      },
+      {
+        "name": "kommunenummer",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "identifikasjon av kommunen som delområdet tilhører"
+      }
+    ],
+    "relationships": {
+      "associations": [
+        {
+          "target": "Grunnkrets",
+          "role": "grunnkrets",
+          "cardinality": "0..*"
+        }
+      ]
+    }
   }
 ]
