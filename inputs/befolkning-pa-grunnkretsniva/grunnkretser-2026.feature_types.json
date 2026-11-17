@@ -66,5 +66,55 @@
         }
       ]
     }
+  },
+  {
+    "name": "SOSIObjekt",
+    "description": "Kan ikke bruke definisjonen fra SOSI Del 1 direkte.\nVerktøyet tillater ikke å kalle objekttypen for SOSI_Objekt",
+    "abstract": true,
+    "attributes": [
+      {
+        "name": "datafangstdato",
+        "type": "DateTime",
+        "cardinality": "0..1",
+        "description": "dato når objektet siste gang ble registrert/observert/målt i terrenget"
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "cardinality": "0..1",
+        "description": "dato for uttak fra en database"
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde"
+      },
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "cardinality": "1",
+        "description": "unik identifikasjon av dataobjektet \n",
+        "attributes": []
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "CharacterString",
+        "cardinality": "0..1",
+        "description": "tidspunkt for siste endring på objektet "
+      },
+      {
+        "name": "gyldigTil",
+        "type": "Date",
+        "cardinality": "0..1",
+        "description": "Tidspunktet når fenomenet opphørte å eksistere "
+      },
+      {
+        "name": "gyldigFra",
+        "type": "Date",
+        "cardinality": "0..1",
+        "description": "Tidspunktet når fenomenet oppsto"
+      }
+    ]
   }
 ]
