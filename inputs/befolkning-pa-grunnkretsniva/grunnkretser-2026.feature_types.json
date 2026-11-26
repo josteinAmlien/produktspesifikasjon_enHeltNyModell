@@ -155,9 +155,29 @@
     "attributes": [
       {
         "name": "kvalitet",
-        "type": "CharacterString",
+        "type": "Posisjonskvalitet",
         "cardinality": "0..1",
-        "description": "stedfestingens kvalitet"
+        "description": "stedfestingens kvalitet",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "cardinality": "0..1",
+            "description": "metode for måling i grunnriss",
+            "valueDomain": {
+              "kind": "codelist",
+              "listedValues": [],
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/generelle-konsepter/4.5/målemetodekode"
+            }
+          },
+          {
+            "name": "nøyaktighet",
+            "type": "Integer",
+            "cardinality": "0..1",
+            "description": "linjas tverravvik i cm"
+          }
+        ]
       },
       {
         "name": "grenselinje",
