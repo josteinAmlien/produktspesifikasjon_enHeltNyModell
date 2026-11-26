@@ -82,6 +82,11 @@
           "target": "Grunnkrets",
           "role": "grunnkrets",
           "cardinality": "0..*"
+        },
+        {
+          "target": "Grense",
+          "role": "avgrensesAv",
+          "cardinality": "0..*"
         }
       ]
     }
