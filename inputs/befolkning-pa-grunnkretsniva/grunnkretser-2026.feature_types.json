@@ -12,7 +12,7 @@
       },
       {
         "name": "grunnkretsId",
-        "type": "OmådeId",
+        "type": "OmrådeId",
         "cardinality": "1",
         "description": "navn og nummer som identifiserer grunnkretsen",
         "attributes": [
@@ -49,6 +49,9 @@
           "role": "avgrensesAv",
           "cardinality": "0..*"
         }
+      ],
+      "inheritance": [
+        "SOSIObjekt"
       ]
     }
   },
@@ -88,6 +91,9 @@
           "role": "avgrensesAv",
           "cardinality": "0..*"
         }
+      ],
+      "inheritance": [
+        "SOSIObjekt"
       ]
     }
   },
