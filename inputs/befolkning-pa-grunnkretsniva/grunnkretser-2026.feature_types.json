@@ -43,6 +43,11 @@
           "target": "Delområde",
           "role": "delområde",
           "cardinality": "0..1"
+        },
+        {
+          "target": "Grense",
+          "role": "avgrensesAv",
+          "cardinality": "0..*"
         }
       ]
     }
