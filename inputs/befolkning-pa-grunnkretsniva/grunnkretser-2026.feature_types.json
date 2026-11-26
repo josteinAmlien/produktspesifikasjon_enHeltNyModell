@@ -12,9 +12,23 @@
       },
       {
         "name": "grunnkretsId",
-        "type": "CharacterString",
+        "type": "OmådeId",
         "cardinality": "1",
-        "description": "navn og nummer som identifiserer grunnkretsen"
+        "description": "navn og nummer som identifiserer grunnkretsen",
+        "attributes": [
+          {
+            "name": "nummer",
+            "type": "CharacterString",
+            "cardinality": "0..1",
+            "description": "numerisk streng på 8 siffer, som entydig identifiserer området"
+          },
+          {
+            "name": "navn",
+            "type": "CharacterString",
+            "cardinality": "0..1",
+            "description": "offisielt navn på området"
+          }
+        ]
       },
       {
         "name": "kommunenummer",
