@@ -68,9 +68,10 @@
       },
       {
         "name": "delområdeId",
-        "type": "CharacterString",
+        "type": "OmrådeId",
         "cardinality": "0..1",
-        "description": "nummer og navn som identifiserer delområdet"
+        "description": "nummer og navn som identifiserer delområdet",
+        "attributes": []
       },
       {
         "name": "kommunenummer",
